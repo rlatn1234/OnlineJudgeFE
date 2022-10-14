@@ -30,7 +30,7 @@
           {{$t('m.OI_Rank')}}
         </Menu-item>
       </Submenu>
-      <Submenu name="about">
+      <!-- <Submenu name="about">
         <template slot="title">
           <Icon type="information-circled"></Icon>
           {{$t('m.About')}}
@@ -41,7 +41,7 @@
         <Menu-item name="/FAQ">
           {{$t('m.FAQ')}}
         </Menu-item>
-      </Submenu>
+      </Submenu> -->
       <template v-if="!isAuthenticated">
         <div class="btn-menu">
           <Button type="ghost"

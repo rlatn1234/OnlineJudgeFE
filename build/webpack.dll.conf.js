@@ -26,9 +26,9 @@ const vendors = [
 const globOptions = {cwd: resolve('static/js'), absolute: true};
 let oldDlls = glob.sync('vendor.dll.*.js', globOptions);
 console.log("cleaning old dll..")
-oldDlls.forEach(f => {
-  fs.unlink(f)
-})
+//oldDlls.forEach(f => {
+//  fs.unlink(f)
+//})
 console.log("building ..")
 
 module.exports = {
