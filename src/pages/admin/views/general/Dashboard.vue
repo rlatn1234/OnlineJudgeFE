@@ -24,7 +24,7 @@
             <el-form-item label="OS">
               <span>{{os}}</span>
             </el-form-item>
-            <el-form-item label="Browser:">
+            <el-form-item label="브라우저:">
               <span>{{browser}}</span>
             </el-form-item>
           </el-form>

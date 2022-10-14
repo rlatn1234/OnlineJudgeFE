@@ -17,10 +17,10 @@
             <FormItem label="OS :" class="item">
               {{session.user_agent | platform}}
             </FormItem>
-            <FormItem label="Browser :" class="item">
+            <FormItem label="브라우저 :" class="item">
               {{session.user_agent | browser}}
             </FormItem>
-            <FormItem label="Last Activity :" class="item">
+            <FormItem label="마지막 접속 :" class="item">
               {{session.last_activity | localtime }}
             </FormItem>
           </Form>
@@ -44,12 +44,12 @@
         </FormItem>
         <template v-if="!loadingQRcode">
           <FormItem style="width: 250px">
-            <Input v-model="formTwoFactor.code" placeholder="Enter the code from your application"/>
+            <Input v-model="formTwoFactor.code" placeholder="2차 인증 앱의 코드를 입력해주새요"/>
           </FormItem>
           <Button type="primary"
                   :loading="loadingBtn"
                   @click="updateTFA(false)"
-                  v-if="!TFAOpened">Open TFA
+                  v-if="!TFAOpened">2차인증 열기
           </Button>
           <Button type="error"
                   :loading="loadingBtn"
